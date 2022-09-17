@@ -12,4 +12,4 @@ These deviations indicate numerous heart arrhythmia types and can be divided int
 - Once model analyses the uploaded image, the predicted category is showcased on the webpage
 
 ## Technical Architecture
-![](https://user-images.githubusercontent.com/68504821/190872840-ce9f222d-32d3-440a-a1d0-b77cc90e0018.png)
+![Architecture](https://user-images.githubusercontent.com/68504821/190873558-7a660801-9a0a-4c55-93a3-c60eef8a64c1.png)
