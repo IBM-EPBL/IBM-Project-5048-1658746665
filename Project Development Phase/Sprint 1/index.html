@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<ul>
+
+  <li style="float:right"><button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+  <li style="float:right"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button></li>
+  <li style="float:right"><button  onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Info</button></li>
+  <li style="float:right"><button onclick="document.getElementById('id04').style.display='block'" style="width:auto;">Predict</button></li>
+
+</ul>
+
+<center><h2 class="header">ARRHYTHMIA PREDICTION</h2></center>
+<br>
+<center><b class="pd"><font color="#ffec78" size="13" font-family="Helvetica" >ECG arrhythmia classification using CNN</font></b></center>
+<div>
+<br>
+<center>
+<p><font color="white" size="3" font-family="Helvetica" >According to the World Health Organization (WHO), cardiovascular diseases (CVDs) are the
+number one cause of death today. Over 17.7 million people died from CVDs in the year 2017
+all over the world which is about 31% of all deaths, and over 75% of these deaths occur in
+low and middle income countries. Arrhythmia is a representative type of CVD that refers to
+any irregular change from the normal heart rhythms. There are several types of arrhythmia
+including atrial fibrillation, premature contraction, ventricular fibrillation, and tachycardia.
+Although single arrhythmia heartbeat may not have a serious impact on life, continuous
+arrhythmia beats can result in fatal circumstances.Electrocardiogram (ECG) is a non-invasive medical tool that displays the rhythm and status
+of the heart. Therefore, automatic detection of irregular heart rhythms from ECG signals is a
+significant task in the field of cardiology.</font>
+</p>
+</center>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+	<div>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+	</div>
+	<div>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+	  </div>
+	  <div>
+        <input type="checkbox" checked="unchecked" name="remember"> Remember me
+	  </div>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+
+	  <button class="button1"  type="submit" >Login</button>
+	  <button class="button1"  onclick="document.getElementById('id05').style.display='block'">Forget Password</button>
+	</div>
+
+  </form>
+</div>
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<div id="id05" class="modal">
+
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="email"><b>E-mail</b></label>
+      <input type="email" placeholder="Enter email" name="email" required>
+
+	<center><button class="button1" type="submit">Send mail</button>    </center>
+    </div>
+	</form>
+	</div>
+<script>
+var modal = document.getElementById('id05');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+
+<div id="id02" class="modal">
+
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <div><label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required></div>
+
+	  <div><label for="email"><b>E-mail</b></label>
+      <input type="email" placeholder="Enter email address" name="email" required></div>
+
+	  <div><label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required></div>
+
+      <div><label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required></div>
+
+      <center><button class="button1" type="submit">Sign_Up</button></center>
+    </div>
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id02');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<div id="id03" class="modal">
+<form style="height: 180%;" class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer" >
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+<div class="container" >
+<center><img src="info.jpg" alt="Arrhythmia"></center>
+ <p><h2>Types of Arrhythmia</h2>
+<b>Supraventricular arrhythmias:</b> Arrhythmias that begin in the atria (the heart's upper chambers). "Supra” means above. “Ventricular” refers to the lower chambers of the heart or ventricles.<br>
+<b>Ventricular arrhythmias:</b> Arrhythmias that begin in the ventricles (the heart's lower chambers).<br>
+<b>Bradyarrhythmias:</b> Slow heart rhythms that may be caused by disease in the heart's conduction system, such as the sinoatrial (SA) node, atrioventricular (AV) node or HIS-Purkinje network.</p><br>
+<h2>Symptoms of Arrhythmia</h2>
+<ol style="display:inline-table;">
+<li> A feeling of skipped heartbeat or that your heart is “running away,” fluttering or doing "flip-flops.</li>
+<li>Pounding in your chest.</li>
+<li>Dizziness or feeling lightheaded.</li>
+<li>Shortness of breath.</li>
+<li>Chest discomfort.</li>
+<li>Weakness or fatigue (feeling very tired).</li>
+<li>Weakening of the heart muscle or low ejection fraction.</li>
+</ol>
+<h2>Causes of Arrhythmia</h2>
+<ol style="display:inline-table;">
+<li>Coronary artery disease.</li>
+<li>Irritable tissue in the heart (due to genetic or acquired causes).</li>
+<li>High blood pressure.</li>
+<li>Changes in the heart muscle (cardiomyopathy).</li>
+<li>Valve disorders.</li>
+<li>Electrolyte imbalances in your blood, such as sodium or potassium imbalances.</li>
+<li>Injury from a heart attack.</li>
+<li>The healing process after heart surgery.</li>
+<li>Other medical conditions.</li>
+
+</div>
+</div>
+
+</body>
+</html>
