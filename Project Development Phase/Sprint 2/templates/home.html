@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/css/index.css">
+<link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="/predict" >PREDICT</a>
+        <a href="/info">INFO</a>
+    </div>
+
+    <div>
+        <center><h2 class="header">ARRHYTHMIA PREDICTION</h2></center>
+        <br>
+        <center>
+            <b class="pd">
+                <font color = "#ffec78" size="13" font-family = "Helvetica">
+                    ECG arrhythmia classification using CNN
+                </font>
+            </b>
+        </center>
+    </div> <br>
+    
+    <center>
+        <p>
+            <font color = "white">
+                According to the World Health Organization (WHO), cardiovascular diseases (CVDs) 
+                are the number one cause of death today. Over 17.7 million people died from CVDs in the year 2017
+                all over the world which is about 31% of all deaths, and over 75% of these deaths occur in
+                low and middle income countries. Arrhythmia is a representative type of CVD that refers to
+                any irregular change from the normal heart rhythms. There are several types of arrhythmia
+                including atrial fibrillation, premature contraction, ventricular fibrillation, and tachycardia.
+                Although single arrhythmia heartbeat may not have a serious impact on life, continuous
+                arrhythmia beats can result in fatal circumstances.Electrocardiogram (ECG) is a non-invasive medical 
+                tool that displays the rhythm and status of the heart. Therefore, automatic detection of irregular 
+                heart rhythms from ECG signals is a significant task in the field of cardiology.
+            </font>
+        </p>
+    </center>
+
+</body>
+
+</html>

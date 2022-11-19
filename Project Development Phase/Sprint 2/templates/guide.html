@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img{
+width:20%;
+height:10%;
+padding:10px;
+border-radius: 4px;
+border: 1px solid #ddd;
+margin-top:10px;
+margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<title>
+    Info
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/css/index.css">
+<link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet"> 
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/predict" >PREDICT</a>
+        <a href="/info">INFO</a>
+        <a href="/home">HOME</a><br>
+    </div>
+
+    
+    <center>
+        <b class="pd">
+            <font color = "#ffec78" size="8" font-family = "Helvetica">
+                ECG - Classification Guide
+            </font>
+        </b>
+    </center>
+    
+<div>
+    <div class="row">
+        <div class="column">
+            <img src="../static/images/NORM.png" title="Normal" style="width:100%">
+            <figcaption>Normal</figcaption>        
+        </div>
+        <div class="column">
+            <img src="../static/images/VF.png" title="Ventricullar Fibrillation" style="width:100%">
+            <figcaption>Ventricullar Fibrillation</figcaption>
+        </div>
+        <div class="column">
+            <img src="../static/images/PAC.png" title="Premature Atrial Contraction" style="width:100%">
+            <figcaption>Premature Atrial Contraction</figcaption>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="../static/images/PVC.png" title="Premature Ventricular Contractions" style="width:100%">
+            <figcaption>Premature Ventricular Contractions</figcaption>        
+        </div>
+        <div class="column">
+            <img src="../static/images/RBBB.png" title="Right Bundle Branch Block" style="width:100%">
+            <figcaption>Right Bundle Branch Block</figcaption>
+        </div>
+        <div class="column">
+            <img src="../static/images/LBBB.png" title="Left Bundle Branch Block" style="width:100%">
+            <figcaption>Left Bundle Branch Block</figcaption>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
